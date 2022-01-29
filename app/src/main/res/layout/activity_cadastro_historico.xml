@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroHistorico">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back3"
+        tools:context=".Artilheiro_Add_Edit">
+
+        <Button
+            android:id="@+id/salvarId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#E1090909"
+            android:text="SALVAR"
+            android:textColor="#F3EFEF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cancelarId"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <Button
+            android:id="@+id/cancelarId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#E1090909"
+            android:text="CANCELAR"
+            android:textColor="#F3EFEF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="80dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/salvarId"
+            app:layout_constraintTop_toBottomOf="@+id/textView21"
+            tools:layout_editor_absoluteX="20dp">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:text="DATA DE REALIZAÇÃO DO TORNEIO"
+                android:textAlignment="center"
+                android:textColor="#FBFBFB"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/dia"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FAF6F6"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="/"
+                    android:textAlignment="center"
+                    android:textColor="#FAF7F7"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mes"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FAF6F6"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="/"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#F6F5F5"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ano"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#FAF6F6"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:text="VERSÃO DO FIFA ULTILIZADA"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#F6F3F3"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vFifaText"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:textColor="#F6F3F3"
+                    android:textStyle="bold" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/vFifa"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:text="SELECIONAR VENCEDORES"
+                android:textAlignment="center"
+                android:textColor="#F1ECEC"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ouro" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/PlayerOuroId"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:spinnerMode="dialog" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nPlayerOuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#EDE9E9"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgPlayerOuro"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:src="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/escudoTimeOuro"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                tools:src="@drawable/villarreall" />
+
+            <TextView
+                android:id="@+id/nTimeOuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textAlignment="center"
+                android:textColor="#F1ECEC"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/prata" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/prataId"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nPlayerPrata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#EDE9E9"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgPlayerPrata"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:src="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/escudoTimePrata"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                tools:src="@drawable/villarreall" />
+
+            <TextView
+                android:id="@+id/nTimePrata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textAlignment="center"
+                android:textColor="#F1ECEC"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/bronze" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/bronzeId"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nPlayerBronze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#EDE9E9"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgPlayerBronze"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:src="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/escudoTimeBronze"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                tools:src="@drawable/villarreall" />
+
+            <TextView
+                android:id="@+id/nTimeBronze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E1090909"
+            android:text="CADASTRO HISTÓRICO"
+            android:textAlignment="center"
+            android:textColor="#F8F6F6"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="160dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

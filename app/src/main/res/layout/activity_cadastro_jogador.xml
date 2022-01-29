@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".CadastroJogador">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CADASTRAR JOGADOR NO TORNEIO"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/salvarJogador"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#46090909"
+            android:text="CLUBE"
+            android:textAlignment="center"
+            android:textColor="#F1EAEA"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nClube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/selecionarClube"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#46090909"
+            android:text="JOGADOR"
+            android:textAlignment="center"
+            android:textColor="#F1EAEA"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imagemJogador"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/nJogador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F4F3F3"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/nomeJogador"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#46090909"
+            android:text="POSIÇÃO EM QUE JOGA"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#F1EAEA"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nPosicao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/selecionarPosicao"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#46090909"
+            android:text="OVERALL"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#F1EAEA"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nOverall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/selecionarOverall"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/salvarJogador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="#46090909"
+        android:text="SALVAR"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cancelar"
+        tools:layout_editor_absoluteX="-33dp" />
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="#46090909"
+        android:text="CANCELAR"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

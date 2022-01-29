@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".GerenciarClubes">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E1090909"
+                android:text="ULTIMAS TRANSFERÊNCIAS"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/listUltimasT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E1090909"
+                android:text="PLAYERS"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/listPlayers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/tabelaId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/classifa"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/configId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/configa"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageButton
+            android:id="@+id/historicoId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/historicoa"
+            app:layout_constraintStart_toEndOf="@+id/transfId"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/transfId"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/transfb"
+            app:layout_constraintStart_toEndOf="@+id/tabelaId" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

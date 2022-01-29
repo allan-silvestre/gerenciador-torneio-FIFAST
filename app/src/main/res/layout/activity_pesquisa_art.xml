@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".PesquisaArt">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/tabelaId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/classifa"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/configId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/configa"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageButton
+            android:id="@+id/historicoId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/historicoa"
+            app:layout_constraintStart_toEndOf="@+id/transfId"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/transfId"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/transfa"
+            app:layout_constraintStart_toEndOf="@+id/tabelaId" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/artilharia"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/common_google_signin_btn_text_light_focused"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/pesquisarArt2"
+        tools:layout_editor_absoluteX="16dp">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/pesquisarArt2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/fecharPesquisaArt2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloArt2" />
+
+    <ImageButton
+        android:id="@+id/fecharPesquisaArt2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloArt2" />
+
+    <TextView
+        android:id="@+id/tituloArt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1090909"
+        android:text="ARTILHARIA"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <ImageButton
+        android:id="@+id/addArtilharia2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#E1090909"
+        android:scaleType="centerInside"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".TabelaFg">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logoId"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.38" />
+
+        <TextView
+            android:id="@+id/textoFinalizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#F8F5F5"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logoId" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ListView
+                android:id="@+id/classifGrupoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <ListView
+                android:id="@+id/classifGrupoB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="70dp"
+                android:paddingEnd="70dp">
+
+                <ListView
+                    android:id="@+id/jogosFinais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    tools:layout_editor_absoluteY="49dp">
+
+                </ListView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/tabelaId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/classifb"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/configId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/configa"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/historicoId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/historicoa"
+            app:layout_constraintStart_toEndOf="@+id/transfId"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/transfId"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/transfa"
+            app:layout_constraintStart_toEndOf="@+id/tabelaId"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/jogosId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#E1DF1111"
+            android:scaleType="centerInside"
+            android:src="@drawable/jogosa"
+            app:layout_constraintEnd_toStartOf="@+id/procurarArt"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <ImageButton
+            android:id="@+id/procurarArt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#E1DF1111"
+            android:scaleType="centerInside"
+            android:src="@drawable/addartilharia"
+            app:layout_constraintEnd_toStartOf="@+id/addCartoes"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <ImageButton
+            android:id="@+id/addCartoes"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#E1DF1111"
+            android:scaleType="centerInside"
+            android:src="@drawable/addcartoes"
+            app:layout_constraintEnd_toStartOf="@+id/configId"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

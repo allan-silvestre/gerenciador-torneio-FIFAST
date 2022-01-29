@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".EditarResultadoFinaisActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_light_focused">
+
+        <Button
+            android:id="@+id/salvarResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#E1090909"
+            android:text="Salvar Resultado"
+            android:textColor="#F3EFEF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/zerarPartida"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <Button
+            android:id="@+id/zerarPartida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#E1090909"
+            android:text="Resetar Partida"
+            android:textColor="#F3EFEF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cancelar"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E1090909"
+            android:text="Cancelar"
+            android:textColor="#F3EFEF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <TextView
+            android:id="@+id/editTimeC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Time 01"
+            android:textAlignment="center"
+            android:textColor="#F4F0F0"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPlayerC" />
+
+        <ImageView
+            android:id="@+id/imgPlayerC"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/salvarResultado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imgPlayerF"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/salvarResultado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/escudoTimeF"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/salvarResultado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/escudoTimeC"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/salvarResultado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/editTimeF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Time 02"
+            android:textAlignment="center"
+            android:textColor="#F4F0F0"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPlayerF" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/salvarResultado"
+            app:layout_constraintEnd_toStartOf="@+id/escudoTimeF"
+            app:layout_constraintStart_toEndOf="@+id/escudoTimeC"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.524">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editGolsTimeC"
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Gols"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="#F4F0F0"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="X"
+                    android:textAlignment="center"
+                    android:textColor="#F4F0F0"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editGolsTimeF"
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Gols"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="#F4F0F0"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editGolsPenaltTimeC"
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Gols"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="#F4F0F0"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="P"
+                    android:textAlignment="center"
+                    android:textColor="#F4F0F0"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editGolsPenaltTimeF"
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Gols"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="#F4F0F0"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_light_default"
+            android:text="EDITAR RESULTADO DA PARTIDA"
+            android:textAlignment="center"
+            android:textColor="#FAF8F8"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="183dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FIFAST</string>
+
+    <string name="APP_ID">novastransferencias</string>
+    <string name="APP">NovasTransferencias</string>
+    <string name="NEWS_CHANNEL_ID">transferencias</string>
+    <string name="CHANNEL_NEWS">Transferencias</string>
+    <string name="JOGOS_ID">jogos</string>
+    <string name="JOGOS">Jogos</string>
+    <string name="CHANNEL_DESCRIPTION">Get informed with new updates</string>
+    <string name="title_activity_pesquisar_cart">PesquisarCart</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

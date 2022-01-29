@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.agsistemas.torneiofifast">
+
+    <uses-permission android:name="au.com.KPS.companion.ACCESS_DATA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="test.org.help.permission.UA_DATA" /> <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- This app has permission to register with GCM and receive message -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="test.org.help.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:directBootAware="true"
+        android:exported="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EditarPerfil"></activity>
+        <activity android:name=".VisitanteJogos" />
+        <activity android:name=".VisitanteHistorico" />
+        <activity android:name=".VisitanteTabela" />
+        <activity android:name=".PesquisarCart" />
+        <activity android:name=".Configuracoes" />
+        <activity android:name=".AddTemporada" />
+        <activity android:name=".HistoricoTorneio" />
+        <activity android:name=".CadastroHistorico" />
+        <activity android:name=".TemporadaAtual" />
+        <activity android:name=".TabelaFg" />
+        <activity android:name=".PesquisaArt" />
+        <activity android:name=".EditarCartoes" />
+        <activity android:name=".AddCartoes" />
+        <activity android:name=".Competidores" />
+        <activity android:name=".EditarGerenciarClubes" />
+        <activity android:name=".EditarJogadorClube" />
+        <activity android:name=".CadastroJogador" />
+        <activity android:name=".GerenciarClubes" />
+        <activity android:name=".EditarArtilheiro" />
+        <activity android:name=".Artilheiro_Add_Edit" />
+        <activity android:name=".Login" />
+        <activity android:name=".EditarResultadoFinaisActivity" />
+        <activity android:name=".EditarResultadoPartidaActivity" />
+        <activity android:name=".JogosFgActivity" />
+        <activity android:name=".EditarCompetidorActivity" />
+        <activity android:name=".CadastroCompetidorActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".NotificationServices">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

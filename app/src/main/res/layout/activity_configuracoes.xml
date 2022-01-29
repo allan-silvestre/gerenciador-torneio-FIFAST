@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".Configuracoes">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout17"
+            android:layout_width="match_parent"
+            android:layout_height="466dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout18"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp">
+
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_google_signin_btn_text_light_pressed"
+                android:text="CONFIGURAÇÕES"
+                android:textAlignment="center"
+                android:textColor="#FDF9F9"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/finalizarTorneio"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#80090909"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="CARREGANDO..."
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <Button
+                android:id="@+id/dataProximoTorneio"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#80090909"
+                android:drawableEnd="@drawable/add"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="ADD DATA DO PRÓXIMO TORNEIO"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <Button
+                android:id="@+id/addHistorico"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#80090909"
+                android:drawableEnd="@drawable/add"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="ADD HISTÓRICO "
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <Button
+                android:id="@+id/novoCompetidor"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#80090909"
+                android:drawableEnd="@drawable/add"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="CADASTRAR NOVO USUÁRIO"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <Button
+                android:id="@+id/gCompetidores"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#80090909"
+                android:drawableEnd="@android:drawable/ic_menu_myplaces"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="GERENCIAR USUÁRIOS"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:textColor="#F8F6F6" />
+
+            <Button
+                android:id="@+id/gTemporadas"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#80090909"
+                android:drawableEnd="@drawable/add"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Add Temporada AO HISTORICO"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <Button
+                android:id="@+id/cadJogador"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="2dp"
+                android:background="#80090909"
+                android:drawableEnd="@drawable/add"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="CADASTRAR JOGADOR EM UM CLUBE"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/embaralharC"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#80090909"
+                android:drawableEnd="@drawable/embaralhar"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="SORTEIO"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <Button
+                android:id="@+id/novoTorneio"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#80090909"
+                android:drawableEnd="@android:drawable/ic_menu_rotate"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="INICIAR NOVO TORNEIO"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgClube"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                tools:src="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/usuarioImg"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:id="@+id/usuarioInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FULANO"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/editarPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="#00FFFFFF"
+                android:text="ALTERAR SENHA"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nivelAcesso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGADO COMO: ADMINISTRADOR"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/sairId"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#00000000"
+                android:scaleType="centerInside"
+                android:src="@drawable/logouta" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/tabelaId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/classifa"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/configId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/configb"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/historicoId"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/historicoa"
+            app:layout_constraintStart_toEndOf="@+id/transfId"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/transfId"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/transfa"
+            app:layout_constraintStart_toEndOf="@+id/tabelaId" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
