@@ -1,7 +1,7 @@
 # GerenciadorTorneioFIFAST
  App de gerenciamento de torneio de FIFA entre amigos
  <br>
- <img src="![Screenshot_1643861353](https://user-images.githubusercontent.com/55851020/152280894-4905b1de-6620-42f5-9691-30bf0a712e9d.png)" alt="drawing" width="200"/>
+ <img src="https://user-images.githubusercontent.com/55851020/152280894-4905b1de-6620-42f5-9691-30bf0a712e9d.png" alt="drawing" width="200"/>
 
 ![Screenshot_1643861397](https://user-images.githubusercontent.com/55851020/152280899-4ed99af2-1558-4dc1-a1b7-d4a15e3aceba.png)
 ![Screenshot_1643861405](https://user-images.githubusercontent.com/55851020/152280900-44592aae-4f74-4725-ae7f-cdbc8ac0320c.png)
