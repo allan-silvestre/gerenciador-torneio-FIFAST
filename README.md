@@ -1,5 +1,5 @@
 # GerenciadorTorneioFIFAST
- App de gerenciamento de torneio de FIFA entre amigos
+Aplicação android para gerenciamento de um torneio de FIFA, onde o mesmo possui um banco de dados online utilizando Firebase, histórico de vencedores dos torneios disputados, gerenciamento dos times com a possibilidade de transferência de jogadores entre as equipes, histórico das transferências realizadas, sorteio dos jogos e gerenciamento de resultados das partidas assim como da tabela de classificação e um perfil único para cada usuário com nível de acesso divido entre ADMINISTRADOR e PADRÃO.
  <br>
  <img src="https://user-images.githubusercontent.com/55851020/152280894-4905b1de-6620-42f5-9691-30bf0a712e9d.png" alt="drawing" width="200"/>
  <img src="https://user-images.githubusercontent.com/55851020/152280899-4ed99af2-1558-4dc1-a1b7-d4a15e3aceba.png" alt="drawing" width="200"/>
