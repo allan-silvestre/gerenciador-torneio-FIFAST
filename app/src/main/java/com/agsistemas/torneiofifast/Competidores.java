@@ -72,6 +72,7 @@ public class Competidores extends Activity {
                 intent.putExtra("statusP", selecionarCompetidor.getStatusP());
                 intent.putExtra("nivelAcesso", selecionarCompetidor.getNivelAcesso());
                 intent.putExtra("status", selecionarCompetidor.getStatus());
+                intent.putExtra("imgPerfil", selecionarCompetidor.getImgPerfil());
 
                 intent.putExtra("idLogado", uLogadoId );
 

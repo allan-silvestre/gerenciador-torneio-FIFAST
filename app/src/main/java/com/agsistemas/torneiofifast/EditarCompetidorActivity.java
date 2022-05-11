@@ -28,7 +28,7 @@ import java.util.ArrayList;
 public class EditarCompetidorActivity extends Activity {
     ImageView escudoTime, imgStatusP;
     ImageButton mais, menos;
-    EditText nomeC, sobrenomeC, timeC, senhaC, ordem, ouro, prata, bronze, statusP;
+    EditText nomeC, sobrenomeC, timeC, senhaC, ordem, ouro, prata, bronze, statusP, linkImgPerfil;
     TextView pts, textNivelAcesso, textStatus;
     String idC, time, img, nivelAcesso, status;
     Button salvarC, cancelarC;
@@ -89,6 +89,7 @@ public class EditarCompetidorActivity extends Activity {
         imgStatusP = findViewById(R.id.imgStatus);
         mais = findViewById(R.id.mais);
         menos = findViewById(R.id.menos);
+        linkImgPerfil = findViewById(R.id.linkPerfil);
 
         ouro = findViewById(R.id.ouro);
         prata = findViewById(R.id.prata);
@@ -116,6 +117,7 @@ public class EditarCompetidorActivity extends Activity {
         bronze.setText(b.getString("TempAtualBronze"));
         pts.setText(b.getString("TempAtualPts"));
         statusP.setText(b.getString("statusP"));
+        linkImgPerfil.setText(b.getString("imgPerfil"));
 
         imgStatusP.setImageResource(imgS[ Integer.parseInt( statusP.getText().toString()) ]);
 
@@ -353,6 +355,7 @@ public class EditarCompetidorActivity extends Activity {
                     databaseReference.child("Competidores").child(idC).child("statusP").setValue(statusP.getText().toString());
                     databaseReference.child("Competidores").child(idC).child("status").setValue(textStatus.getText().toString());
                     databaseReference.child("Competidores").child(idC).child("nivelAcesso").setValue(textNivelAcesso.getText().toString());
+                    databaseReference.child("Competidores").child(idC).child("imgPerfil").setValue(linkImgPerfil.getText().toString());
 
                     int ptss = Integer.parseInt( ouro.getText().toString() ) * 10 + Integer.parseInt( prata.getText().toString() ) * 6 + Integer.parseInt( bronze.getText().toString() ) * 3;
                     databaseReference.child("Competidores").child(idC).child("tempAtualPts").setValue(String.valueOf(ptss));

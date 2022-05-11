@@ -4,13 +4,12 @@ apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.1"
 
     defaultConfig {
         applicationId "com.agsistemas.torneiofifast"
         minSdkVersion 26
         targetSdkVersion 30
-        versionCode 1
+        versionCode 3
         versionName "3.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

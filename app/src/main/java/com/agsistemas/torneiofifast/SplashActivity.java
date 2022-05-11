@@ -65,7 +65,7 @@ public class SplashActivity extends Activity {
 
         versaoAppId = findViewById(R.id.versaoAppId);
 
-        versaoAppId.setText("7.2.2");
+        versaoAppId.setText("7.2.4");
 
         if( isOnline() ) {
             getConfigServidor();

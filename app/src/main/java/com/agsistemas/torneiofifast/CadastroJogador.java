@@ -78,7 +78,7 @@ public class CadastroJogador extends Activity {
                     "ASENSIO", "GIMÉNEZ", "INIESTA", "SABITZER", "ISCO", "AGUERO", "VIDIĆ", "BARESI", "VAN BASTEN", "MOORE", "DALGLISH",
                     "PIRÈS", "OWEN", "KLUIVERT", "HAGI", "TREZEGUET", "SCHOLES", "KLOSE", "RUSH", "RUI COSTA", "PETIT", "HERNÁNDEZ",
                     "CRESPO", "LEHMANN", "LINEKER", "VAN DER SAR", "BERCHICHE IZETA", "MARCOS ACUNÃ", "KIERA TRIPPIER", "RUBEM SANTOS",
-                    "ASHLEY COLE", "RONALD KOEMAN", "CAFÚ", "LAPORTE", "VAN PERSIE"};
+                    "ASHLEY COLE", "RONALD KOEMAN", "CAFÚ", "LAPORTE", "VAN PERSIE", "CASILLAS", "CECH", "GINOLA", "ZAMBROTTA"};
 
     List<Integer> imagemJogadores = new ArrayList<>();
     TextView tim, nom, po, ov;

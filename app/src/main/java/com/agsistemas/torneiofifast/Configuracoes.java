@@ -2544,7 +2544,7 @@ public class Configuracoes extends Activity {
                 pC_T2R4J3.setStatusTimeFora(statusTime[4]);
 
                 pC_T2R4J3.setIdTimeCasa(idTimes[6]);
-                pC_T1R4J3.setIdTimeFora(idTimes[4]);
+                pC_T2R4J3.setIdTimeFora(idTimes[4]);
 
                 pC_T2R4J3.setImagemTimeCasa(iTime[6]);
                 pC_T2R4J3.setImagemTimeFora(iTime[4]);
